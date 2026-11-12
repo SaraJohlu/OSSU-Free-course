@@ -1,0 +1,24 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname 1a-problem-solving) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+;; HtC1X: How to Code: Simple Data
+;; BSL P1 - More Arithmetic Expressions
+
+;; PROBLEM:
+;;
+;; Skriv två uttryck som multiplicerar talen 3, 5 och 7.
+;; 
+;; Det första uttrycket ska utnyttja att multiplikationstecknet (*) 
+;; kan ta emot fler än två argument samtidigt i BSL.
+;;
+;; Det andra uttrycket ska bygga upp resultatet genom att först multiplicera 
+;; 3 med 5, och sedan multiplicera det resultatet med 7.
+
+
+(* 3 5 7)
+105
+
+(* (* 3 5) 7)
+(* 15 7)
+105
+
